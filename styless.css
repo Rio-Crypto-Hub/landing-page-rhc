@@ -12,7 +12,8 @@ footer {
   background-color: rgba(16, 83, 89, 1);
 }
 
-header img, footer img {
+header img,
+footer img {
   width: 50px;
   height: 50px;
   margin: 25px 20px;
@@ -44,6 +45,7 @@ main {
 
 .title-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -52,13 +54,16 @@ main {
   color: rgb(0, 0, 0);
   border-radius: 10px;
 
-  font-size: 2rem;
+  font-size: 50px;
   text-align: center;
+  line-height: 1.2;
 }
 
 .title-box span {
   font-family: Futura-Bold;
   font-weight: 600;
+
+  font-size: 45px;
 
   color: rgba(69, 137, 59, 1);
 }
@@ -68,7 +73,7 @@ main {
 
   border-radius: 10px;
 
-  font-size: 1rem;
+  font-size: 20px;
   line-height: 1.6;
 
   flex: 2;
