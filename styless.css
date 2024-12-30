@@ -4,14 +4,15 @@
   box-sizing: border-box;
 }
 
-header, footer {
+header,
+footer {
   width: 100%;
   height: 15vh;
 
   background-color: rgba(16, 83, 89, 1);
 }
 
-header img {
+header img, footer img {
   width: 50px;
   height: 50px;
   margin: 25px 20px;
@@ -39,7 +40,6 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   gap: 20px;
-
 }
 
 .title-box {
@@ -59,14 +59,15 @@ main {
 .title-box span {
   font-family: Futura-Bold;
   font-weight: 600;
+
   color: rgba(69, 137, 59, 1);
 }
 
 .text-box {
   padding: 20px;
-  
+
   border-radius: 10px;
-  
+
   font-size: 1rem;
   line-height: 1.6;
 
@@ -74,19 +75,34 @@ main {
   background-color: rgba(240, 173, 28, 1);
 }
 
+.title {
+  position: absolute;
 
-.devs{
+  padding: 500px 600px;
+}
+
+.devs {
   position: absolute;
   display: flex;
 
   width: 80%;
   padding: 20px;
 
-  margin-top: 550px;
+  margin-top: 600px;
   margin-left: 140px;
 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   gap: 20px;
+}
 
+.box {
+  display: flex;
+
+  gap: 30px;
+}
+
+.box-img {
+  height: 50px;
+  width: 50px;
 }
