@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+
+  color: #333;
+}
+
 header,
 footer {
   width: 100%;
@@ -35,7 +41,7 @@ main {
   background-color: rgba(217, 40, 94, 1);
 }
 
-.about {
+.about-rch {
   position: relative;
   display: flex;
 
@@ -50,7 +56,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.title-box {
+.title-box-rch {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +64,6 @@ main {
 
   height: auto;
 
-  color: rgb(0, 0, 0);
   border-radius: 10px;
 
   font-size: 50px;
@@ -66,8 +71,7 @@ main {
   line-height: 1.2;
 }
 
-.title-box span {
-  font-family: Futura-Bold;
+.title-box-rch span {
   font-weight: 600;
 
   font-size: 45px;
@@ -75,68 +79,99 @@ main {
   color: rgba(69, 137, 59, 1);
 }
 
-.text-box {
+.text-box-rch {
   padding: 20px;
 
   border-radius: 10px;
-
   font-size: 20px;
   line-height: 1.6;
 
   flex: 2;
+
   background-color: rgba(240, 173, 28, 1);
 }
 
-.title-devs {
-  align-items: center;
+h1 {
+  text-align: center;
 
-  margin-top: 40px;
+  font-size: 50px;
 
-  font-size: 36px;
-
-  color: white;
+  margin: 20px 0;
 }
 
-.devs {
-  display: flex;
-  flex-direction: column;
+.devs-section {
+  padding: 20px;
+}
 
-  width: 80%;
-
+.devs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.box-devs {
-  display: flex;
-
-  padding: 20px;
-
+.devs-card {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
   border-radius: 10px;
+  background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 
-  gap: 30px;
+  max-width: 250px;
+  width: 100%;
 
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.box-devs:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+.devs-card:hover {
+  transform: scale(1.05);
 }
 
-.box-img {
-  height: 150px;
-  width: 150px;
-}
-
-.text-devs {
-  padding: 20px;
-
+.devs-card img {
+  width: 100%;
+  display: block;
   border-radius: 10px;
+}
 
+.devs-card h3 {
+  margin: 10px 0 5px;
+
+  font-size: 18px;
+}
+
+.devs-card p {
+  margin: 0 0 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.devs-card:hover .overlay {
+  opacity: 1;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
   font-size: 20px;
-  line-height: 1.6;
-
-  flex: 2;
-  background-color: rgba(16, 83, 89, 1);
+  text-decoration: none;
 }
