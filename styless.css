@@ -224,10 +224,27 @@ footer {
 
 .logo p {
   max-width: 300px;
+
   margin-top: 30px;
+  margin-bottom: 30px;
 
   font-size: 16px;
   line-height: 1.6;
+}
+
+.logo a {
+  font-size: 20px;
+  text-decoration: none;
+
+  margin-left: 15px;
+
+  color: #fff;
+
+  transition: color 0.3s ease;
+}
+
+.logo a:hover {
+  color: rgba(240, 173, 28, 1);
 }
 
 .extra-links h3 {
@@ -267,7 +284,7 @@ footer {
 
 .subscribe form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 
   gap: 10px;
 }
@@ -306,26 +323,6 @@ footer {
 
 .subscribe button:hover {
   background-color: rgba(217, 40, 94, 1);
-}
-
-.social h3 {
-  font-size: 20px;
-
-  margin-top: 20px;
-  margin-bottom: 70px;
-}
-
-.social a {
-  font-size: 20px;
-  text-decoration: none;
-
-  color: #fff;
-
-  transition: color 0.3s ease;
-}
-
-.social a:hover {
-  color: rgba(240, 173, 28, 1);
 }
 
 .copyright {
