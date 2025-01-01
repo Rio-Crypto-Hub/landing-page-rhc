@@ -234,7 +234,7 @@ footer {
   font-size: 20px;
 
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 65px;
 }
 
 .extra-links ul {
@@ -262,7 +262,7 @@ footer {
   font-size: 20px;
 
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 65px;
 }
 
 .subscribe form {
@@ -308,12 +308,11 @@ footer {
   background-color: rgba(217, 40, 94, 1);
 }
 
-.social {
-  display: flex;
+.social h3 {
+  font-size: 20px;
 
   margin-top: 20px;
-
-  gap: 15px;
+  margin-bottom: 70px;
 }
 
 .social a {
@@ -330,21 +329,19 @@ footer {
 }
 
 .copyright {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  justify-content: center;
 
   margin-top: 20px;
-  
+  margin-left: 430px;
+
   font-size: 14px;
-  
+
   color: #ddd;
 }
 
 .copyright p {
   margin: 5px 0;
-  
+
   line-height: 1.6;
 }
 
