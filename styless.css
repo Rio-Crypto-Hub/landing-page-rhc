@@ -25,7 +25,7 @@ header img {
   height: 50px;
 
   margin: 25px 20px;
-  
+
   cursor: pointer;
 }
 
@@ -33,13 +33,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   width: 100%;
   min-height: 100vh;
   padding: 20px;
-  
+
   gap: 40px;
-  
+
   background-color: rgba(217, 40, 94, 1);
 }
 
@@ -47,13 +47,13 @@ main {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  
+
   width: 80%;
   padding: 40px;
   margin-top: 80px;
-  
+
   gap: 20px;
-  
+
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -63,11 +63,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   height: auto;
-  
+
   border-radius: 10px;
-  
+
   font-size: 50px;
   text-align: center;
   line-height: 1.2;
@@ -76,26 +76,26 @@ main {
 .title-box-rch span {
   font-weight: 600;
   font-size: 45px;
-  
+
   color: rgba(69, 137, 59, 1);
 }
 
 .text-box-rch {
   padding: 20px;
-  
+
   border-radius: 10px;
-  
+
   font-size: 20px;
   line-height: 1.6;
   flex: 2;
-  
+
   background-color: rgba(240, 173, 28, 1);
 }
 
 h1 {
   text-align: center;
   font-size: 50px;
-  
+
   margin: 20px 0;
 }
 
@@ -105,28 +105,28 @@ h1 {
 
 .devs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
   max-width: 1200px;
   margin: 0 auto;
-  
+
   gap: 20px;
 }
 
 .devs-card {
   position: relative;
-  
+
   max-width: 250px;
   width: 100%;
-  
+
   text-align: center;
   overflow: hidden;
-  
+
   background-color: #fff;
-  
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  
+
   transition: transform 0.3s ease;
 }
 
@@ -136,23 +136,23 @@ h1 {
 
 .devs-card img {
   display: block;
-  
+
   width: 100%;
-  
+
   border-radius: 10px;
 }
 
 .devs-card h3 {
   margin: 10px 0 5px;
-  
+
   font-size: 18px;
 }
 
 .devs-card p {
   margin: 0 0 15px;
-  
+
   font-size: 14px;
-  
+
   color: #777;
 }
 
@@ -161,15 +161,15 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  
+
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
-  
+
   transition: opacity 0.3s ease;
 }
 
@@ -330,7 +330,7 @@ footer {
 .copyright {
   text-align: center;
   font-size: 14px;
-  
+
   margin-top: 20px;
 
   color: #ddd;
@@ -342,6 +342,10 @@ footer {
 }
 
 @media (max-width: 1024px) {
+  .devs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
   .about-rch {
     flex-direction: column;
   }
@@ -367,7 +371,7 @@ footer {
   }
 
   .devs-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
 
   .subscribe form {
@@ -386,5 +390,8 @@ footer {
 
   .social-icons a {
     font-size: 16px;
+  }
+  .devs-grid {
+    grid-template-columns: 1fr;
   }
 }
