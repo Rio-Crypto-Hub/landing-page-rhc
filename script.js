@@ -14,7 +14,7 @@ function handleSubscribe(event) {
     }
 
     message.textContent = "E-mail enviado com sucesso!";
-    message.style.color = "green";
+    message.style.color = "white";
 
     console.log("Email enviado:", email);
 
