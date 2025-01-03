@@ -185,9 +185,10 @@
 
         <div class="subscribe">
           <h3>Subscribe</h3>
-          <form>
-            <input type="email" placeholder="Your email" />
-            <button type="submit">SUBSCRIBE</button>
+          <form id="subscribe-form" onsubmit="handleSubscribe(event)">
+            <input type="email" id="email" placeholder="Your email" />
+            <button type="submit">Enviar</button>
+            <p id="response-message"></p>
           </form>
         </div>
 

@@ -1,5 +1,7 @@
 function handleSubscribe(event) {
+    console.log("handleSubscribe chamada");
     event.preventDefault();
+
     const email = document.getElementById("email").value;
     const message = document.getElementById("response-message");
 
