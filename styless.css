@@ -40,7 +40,21 @@ main {
 
   gap: 40px;
 
-  background-color: rgba(217, 40, 94, 1);
+  background: linear-gradient(
+    270deg,  
+    rgba(240, 173, 28, 1), 
+    rgba(226, 118, 19, 1), 
+    rgba(217, 40, 94, 1), 
+    rgba(221, 76, 208, 1)
+  );
+  background-size: 600% 600%;
+  animation: gradientAnimation 6s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .about-rch {
