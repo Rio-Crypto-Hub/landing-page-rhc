@@ -41,10 +41,10 @@ main {
   gap: 40px;
 
   background: linear-gradient(
-    270deg,  
-    rgba(240, 173, 28, 1), 
-    rgba(226, 118, 19, 1), 
-    rgba(217, 40, 94, 1), 
+    270deg,
+    rgba(240, 173, 28, 1),
+    rgba(226, 118, 19, 1),
+    rgba(217, 40, 94, 1),
     rgba(221, 76, 208, 1)
   );
   background-size: 600% 600%;
@@ -52,9 +52,15 @@ main {
 }
 
 @keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .aboutRch {
@@ -114,12 +120,16 @@ h1 {
 }
 
 .devsSection {
+  max-width: 100%;
   padding: 20px;
+
+  overflow: hidden;
 }
 
 .devsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-content: center;
 
   max-width: 1200px;
   margin: 0 auto;
@@ -260,7 +270,7 @@ footer {
 }
 
 .logo a:hover {
-  color: rgba(240, 173, 28, 1);
+  color: rgba(221, 76, 208, 1);
 }
 
 .extraLinks h3 {
@@ -288,7 +298,7 @@ footer {
 }
 
 .extraLinks ul li a:hover {
-  color: rgba(240, 173, 28, 1);
+  color: rgba(221, 76, 208, 1);
 }
 
 .subscribe h3 {
@@ -338,7 +348,7 @@ footer {
 }
 
 .subscribe button:hover {
-  background-color: rgba(217, 40, 94, 1);
+  background-color: rgba(221, 76, 208, 1);
 }
 
 .copyright {
@@ -360,6 +370,10 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
+  .devsCard {
+    margin: 10px;
+  }
+
   .aboutRch {
     flex-direction: column;
   }
@@ -378,14 +392,27 @@ footer {
     margin: 15px 10px;
   }
 
+  .devsSection {
+    padding: 0 10px;
+  }
+
+  .devsGrid {
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 10px;
+  }
+
+  .devsCard {
+    max-width: 100%;
+
+    margin: 0 auto;
+    padding: 8px;
+  }
+
   .container {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  .devsGrid {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
 
   .subscribe form {
@@ -394,6 +421,18 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .devsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .devsCard {
+    max-width: 90%;
+
+    margin: 0 auto;
+
+    padding: 5px;
+  }
+
   h1 {
     font-size: 28px;
   }
@@ -404,8 +443,5 @@ footer {
 
   .socialIcons a {
     font-size: 16px;
-  }
-  .devsGrid {
-    grid-template-columns: 1fr;
   }
 }
