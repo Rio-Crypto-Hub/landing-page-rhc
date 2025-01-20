@@ -1,9 +1,8 @@
 function handleSubscribe(event) {
-  console.log("handleSubscribe chamada");
   event.preventDefault();
 
   const email = document.getElementById("email").value;
-  const message = document.getElementById("response-message");
+  const message = document.getElementById("responseMessage");
 
   const validationEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
